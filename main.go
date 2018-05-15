@@ -1,9 +1,11 @@
 package main
 
 import (
-	"fmt"
+	l4g "github.com/alecthomas/log4go"
 )
 
 func main() {
-	fmt.Println("Hello,world!")
+	l4g.LoadConfiguration("config/log4go.xml")
+	l4g.Info("Hello,word!")
+	defer l4g.Close()
 }
