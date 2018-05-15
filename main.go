@@ -3,6 +3,7 @@ package main
 import (
 	"io/ioutil"
 	"net/http"
+	"os"
 	"time"
 
 	"github.com/Unknwon/goconfig"
@@ -29,12 +30,15 @@ func main() {
 	writetimeout := cfg.MustInt("Server", "writetimeout", 10)
 	maxheaderbytes := cfg.MustInt("Server", "maxheaderbytes", 10)
 
+	var banner string
 	//加载banner
-	b, err := ioutil.ReadFile("config/banner.txt")
-	if err != nil {
-		l4g.Error("读取banner文件失败[config/banner.txt]")
+	if _, err := os.Stat("config/banner.txt"); err == nil {
+		b, err := ioutil.ReadFile("config/banner.txt")
+		if err != nil {
+			l4g.Error("读取banner文件失败[config/banner.txt]")
+		}
+		banner = string(b)
 	}
-	banner := string(b)
 
 	l4g.Info("Server Zgo (" + version + ") starting at:[" + host + ":" + port + "]  ...\n" + banner)
 	router := NewRouter()

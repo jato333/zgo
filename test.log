@@ -82,3 +82,47 @@ zzzzzzzzzzzzzzzzz    gggggggg::::::g    ooooooooooo
                      ggg::::::ggg                     
                         gggggg                        
 [2018/05/15 23:23:15 CST] [INFO] (main.Logger.func1:16) HTTP/1.1	GET	127.0.0.1:52819 -> localhost:8000/	Index	0s
+[2018/05/15 23:26:14 CST] [INFO] (main.Logger.func1:16) HTTP/1.1	POST	127.0.0.1:52900 -> localhost:8000/todos	TodoCreate	1.0001ms
+[2018/05/15 23:26:25 CST] [INFO] (main.Logger.func1:16) HTTP/1.1	POST	127.0.0.1:52931 -> localhost:8000/todos	TodoCreate	0s
+[2018/05/15 23:26:26 CST] [INFO] (main.Logger.func1:16) HTTP/1.1	POST	127.0.0.1:52931 -> localhost:8000/todos	TodoCreate	0s
+[2018/05/15 23:26:26 CST] [INFO] (main.Logger.func1:16) HTTP/1.1	POST	127.0.0.1:52931 -> localhost:8000/todos	TodoCreate	0s
+[2018/05/15 23:26:26 CST] [INFO] (main.Logger.func1:16) HTTP/1.1	POST	127.0.0.1:52931 -> localhost:8000/todos	TodoCreate	0s
+[2018/05/15 23:26:26 CST] [INFO] (main.Logger.func1:16) HTTP/1.1	POST	127.0.0.1:52931 -> localhost:8000/todos	TodoCreate	0s
+[2018/05/15 23:26:26 CST] [INFO] (main.Logger.func1:16) HTTP/1.1	POST	127.0.0.1:52931 -> localhost:8000/todos	TodoCreate	0s
+[2018/05/15 23:26:27 CST] [INFO] (main.Logger.func1:16) HTTP/1.1	POST	127.0.0.1:52931 -> localhost:8000/todos	TodoCreate	0s
+[2018/05/15 23:26:27 CST] [INFO] (main.Logger.func1:16) HTTP/1.1	POST	127.0.0.1:52931 -> localhost:8000/todos	TodoCreate	0s
+[2018/05/15 23:26:27 CST] [INFO] (main.Logger.func1:16) HTTP/1.1	POST	127.0.0.1:52931 -> localhost:8000/todos	TodoCreate	0s
+[2018/05/15 23:26:27 CST] [INFO] (main.Logger.func1:16) HTTP/1.1	POST	127.0.0.1:52931 -> localhost:8000/todos	TodoCreate	0s
+[2018/05/15 23:26:27 CST] [INFO] (main.Logger.func1:16) HTTP/1.1	POST	127.0.0.1:52931 -> localhost:8000/todos	TodoCreate	0s
+[2018/05/15 23:26:27 CST] [INFO] (main.Logger.func1:16) HTTP/1.1	POST	127.0.0.1:52931 -> localhost:8000/todos	TodoCreate	0s
+[2018/05/15 23:34:12 CST] [INFO] (main.main:43) Server Zgo (1.0.0) starting at:[127.0.0.1:8000]  ...
+
+[2018/05/15 23:34:34 CST] [INFO] (main.main:43) Server Zgo (1.0.0) starting at:[127.0.0.1:8000]  ...
+zzzzzzzzzzzzzzzzz   ggggggggg   ggggg   ooooooooooo   
+z:::::::::::::::z  g:::::::::ggg::::g oo:::::::::::oo 
+z::::::::::::::z  g:::::::::::::::::go:::::::::::::::o
+zzzzzzzz::::::z  g::::::ggggg::::::ggo:::::ooooo:::::o
+      z::::::z   g:::::g     g:::::g o::::o     o::::o
+     z::::::z    g:::::g     g:::::g o::::o     o::::o
+    z::::::z     g:::::g     g:::::g o::::o     o::::o
+   z::::::z      g::::::g    g:::::g o::::o     o::::o
+  z::::::zzzzzzzzg:::::::ggggg:::::g o:::::ooooo:::::o
+ z::::::::::::::z g::::::::::::::::g o:::::::::::::::o
+z:::::::::::::::z  gg::::::::::::::g  oo:::::::::::oo 
+zzzzzzzzzzzzzzzzz    gggggggg::::::g    ooooooooooo   
+                             g:::::g                  
+                 gggggg      g:::::g                  
+                 g:::::gg   gg:::::g                  
+                  g::::::ggg:::::::g                  
+                   gg:::::::::::::g                   
+                     ggg::::::ggg                     
+                        gggggg                        
+[2018/05/15 23:34:43 CST] [INFO] (main.Logger.func1:16) HTTP/1.1	POST	127.0.0.1:53201 -> localhost:8000/todos	TodoCreate	1ms
+[2018/05/15 23:34:46 CST] [INFO] (main.Logger.func1:16) HTTP/1.1	POST	127.0.0.1:53201 -> localhost:8000/todos	TodoCreate	0s
+[2018/05/15 23:34:46 CST] [INFO] (main.Logger.func1:16) HTTP/1.1	POST	127.0.0.1:53201 -> localhost:8000/todos	TodoCreate	0s
+[2018/05/15 23:34:46 CST] [INFO] (main.Logger.func1:16) HTTP/1.1	POST	127.0.0.1:53201 -> localhost:8000/todos	TodoCreate	0s
+[2018/05/15 23:34:47 CST] [INFO] (main.Logger.func1:16) HTTP/1.1	POST	127.0.0.1:53201 -> localhost:8000/todos	TodoCreate	0s
+[2018/05/15 23:34:47 CST] [INFO] (main.Logger.func1:16) HTTP/1.1	POST	127.0.0.1:53201 -> localhost:8000/todos	TodoCreate	0s
+[2018/05/15 23:34:47 CST] [INFO] (main.Logger.func1:16) HTTP/1.1	POST	127.0.0.1:53201 -> localhost:8000/todos	TodoCreate	0s
+[2018/05/15 23:34:47 CST] [INFO] (main.Logger.func1:16) HTTP/1.1	POST	127.0.0.1:53201 -> localhost:8000/todos	TodoCreate	0s
+[2018/05/15 23:34:47 CST] [INFO] (main.Logger.func1:16) HTTP/1.1	POST	127.0.0.1:53201 -> localhost:8000/todos	TodoCreate	0s
