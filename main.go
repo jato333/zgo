@@ -1,4 +1,4 @@
-package zgo
+package main
 
 import (
 	"fmt"
