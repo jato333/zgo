@@ -1,0 +1,19 @@
+zzzzzzzzzzzzzzzzz   ggggggggg   ggggg   ooooooooooo   
+z:::::::::::::::z  g:::::::::ggg::::g oo:::::::::::oo 
+z::::::::::::::z  g:::::::::::::::::go:::::::::::::::o
+zzzzzzzz::::::z  g::::::ggggg::::::ggo:::::ooooo:::::o
+      z::::::z   g:::::g     g:::::g o::::o     o::::o
+     z::::::z    g:::::g     g:::::g o::::o     o::::o
+    z::::::z     g:::::g     g:::::g o::::o     o::::o
+   z::::::z      g::::::g    g:::::g o::::o     o::::o
+  z::::::zzzzzzzzg:::::::ggggg:::::g o:::::ooooo:::::o
+ z::::::::::::::z g::::::::::::::::g o:::::::::::::::o
+z:::::::::::::::z  gg::::::::::::::g  oo:::::::::::oo 
+zzzzzzzzzzzzzzzzz    gggggggg::::::g    ooooooooooo   
+                             g:::::g                  
+                 gggggg      g:::::g                  
+                 g:::::gg   gg:::::g                  
+                  g::::::ggg:::::::g                  
+                   gg:::::::::::::g                   
+                     ggg::::::ggg                     
+                        gggggg                        
