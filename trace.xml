@@ -1,7 +1,0 @@
-<log created="2018/05/15 22:24:51 CST">
-	<record level="INFO">
-		<timestamp>2018/05/15 22:24:51 CST</timestamp>
-		<source>main.main:9</source>
-		<message>Hello,word!</message>
-	</record>
-</log>
