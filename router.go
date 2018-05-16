@@ -1,27 +1,27 @@
 package main
 
 import (
-	"net/http"
+	"time"
 
-	"github.com/gorilla/mux"
+	log4go "github.com/alecthomas/log4go"
+	"github.com/julienschmidt/httprouter"
 )
 
-func NewRouter() *mux.Router {
-
-	router := mux.NewRouter().StrictSlash(true)
+func NewRouter(routes Routes) *httprouter.Router {
+	router := httprouter.New()
+	log4go.Info("Begin Load service ...")
+	start := time.Now()
 	for _, route := range routes {
-		var handler http.Handler
+		var handle httprouter.Handle
 
-		handler = route.HandlerFunc
-		handler = Logger(handler, route.Name)
+		handle = route.HandlerFunc
+		handle = Logger(handle)
 
-		router.
-			Methods(route.Method).
-			Path(route.Pattern).
-			Name(route.Name).
-			Handler(handler)
-
+		router.Handle(route.Method, route.Path, handle)
+		log4go.Info("Loading [%s]\t%s", route.Method, route.Path)
 	}
+
+	log4go.Info("%d services were loaded successfully! Total cost %s", len(routes), time.Since(start))
 
 	return router
 }

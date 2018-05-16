@@ -1,55 +1,59 @@
 package main
 
 import (
-	"io/ioutil"
 	"net/http"
-	"os"
+	"strings"
 	"time"
 
+	log4go "github.com/alecthomas/log4go"
+
+	"io/ioutil"
+
 	"github.com/Unknwon/goconfig"
-	l4g "github.com/alecthomas/log4go"
+	//	"github.com/kylelemons/go-gypsy/yaml"
 )
 
 func main() {
-	//加载日志配置文件
-	l4g.LoadConfiguration("config/log4go.xml")
-	defer l4g.Close()
+	log4go.LoadConfiguration("config/log4go.xml")
 
-	//加载配置文件
+	b, err := ioutil.ReadFile("config/banner.txt")
+	if err != nil {
+		log4go.Error("Read banner err %v ", err)
+	}
+
+	banner := strings.Replace(string(b), "\r\n", "\n", -1)
+
 	cfg, err := goconfig.LoadConfigFile("config/config.ini")
 	if err != nil {
-		l4g.Error("读取配置文件失败[config/config.ini]")
-		return
+		log4go.Error("无法加载ini配置文件：%s", err)
 	}
 
-	//读取配置字段信息（每个字段都给出响应的默认值）
-	host := cfg.MustValue("Server", "host", "127.0.0.1")
-	port := cfg.MustValue("Server", "port", "8080")
-	version := cfg.MustValue("Server", "version", "1.0.0")
-	readtimeout := cfg.MustInt("Server", "readtimeout", 10)
-	writetimeout := cfg.MustInt("Server", "writetimeout", 10)
-	maxheaderbytes := cfg.MustInt("Server", "maxheaderbytes", 10)
+	//	config, err := yaml.ReadFile("conf.yaml")
+	//	if err != nil {
+	//		log4go.Error("无法加载yaml配置文件：%s", err)
+	//	}
+	//	fmt.Println(config.Get("path"))
 
-	var banner string
-	//加载banner
-	if _, err := os.Stat("config/banner.txt"); err == nil {
-		b, err := ioutil.ReadFile("config/banner.txt")
-		if err != nil {
-			l4g.Error("读取banner文件失败[config/banner.txt]")
-		}
-		banner = string(b)
-	}
+	version := cfg.MustValue("server", "version", "1.0.0.0")
 
-	l4g.Info("Server Zgo (" + version + ") starting at:[" + host + ":" + port + "]  ...\n" + banner)
-	router := NewRouter()
-	//设置服务端信息
+	host := cfg.MustValue("server", "host", "127.0.0.1")
+	port := cfg.MustValue("server", "port", "8080")
+
+	readtimeout := cfg.MustInt("server", "readtimeout", 10)
+	writetimeout := cfg.MustInt("server", "writetimeout", 10)
+	maxheaderbytes := cfg.MustInt("server", "maxheaderbytes", 20)
+
+	log4go.Info("Server Zgo "+version+" starting at [%s", host+":"+port+"]\n"+banner)
+
+	router := NewRouter(AllRoutes())
+
 	server := &http.Server{
 		Addr:           host + ":" + port,
 		Handler:        router,
 		ReadTimeout:    time.Duration(readtimeout) * time.Second,
 		WriteTimeout:   time.Duration(writetimeout) * time.Second,
-		MaxHeaderBytes: 1 << uint16(maxheaderbytes),
+		MaxHeaderBytes: 1 << uint32(maxheaderbytes),
 	}
 
-	l4g.Info(server.ListenAndServe())
+	log4go.Info(server.ListenAndServe())
 }

@@ -6,74 +6,69 @@ import (
 	"io"
 	"io/ioutil"
 	"net/http"
-	"strconv"
 
-	"github.com/gorilla/mux"
+	"github.com/julienschmidt/httprouter"
 )
 
-func Index(w http.ResponseWriter, r *http.Request) {
+func Index(w http.ResponseWriter, r *http.Request, _ httprouter.Params) {
 	fmt.Fprint(w, "Welcome!\n")
 }
 
-func TodoIndex(w http.ResponseWriter, r *http.Request) {
-	w.Header().Set("Content-Type", "application/json; charset=UTF-8")
-	w.WriteHeader(http.StatusOK)
-	if err := json.NewEncoder(w).Encode(todos); err != nil {
-		panic(err)
-	}
-}
-
-func TodoShow(w http.ResponseWriter, r *http.Request) {
-	vars := mux.Vars(r)
-	var todoId int
-	var err error
-	if todoId, err = strconv.Atoi(vars["todoId"]); err != nil {
-		panic(err)
-	}
-	todo := RepoFindTodo(todoId)
-	if todo.Id > 0 {
-		w.Header().Set("Content-Type", "application/json; charset=UTF-8")
-		w.WriteHeader(http.StatusOK)
-		if err := json.NewEncoder(w).Encode(todo); err != nil {
-			panic(err)
-		}
+func BookCreate(w http.ResponseWriter, r *http.Request, params httprouter.Params) {
+	book := &Book{}
+	if err := populateModelFromHandler(w, r, params, book); err != nil {
+		writeErrorResponse(w, http.StatusUnprocessableEntity, "Unprocessible Entity")
 		return
 	}
-
-	// If we didn't find it, 404
-	w.Header().Set("Content-Type", "application/json; charset=UTF-8")
-	w.WriteHeader(http.StatusNotFound)
-	if err := json.NewEncoder(w).Encode(jsonErr{Code: http.StatusNotFound, Text: "Not Found"}); err != nil {
-		panic(err)
-	}
-
+	bookstore[book.ISDN] = book
+	writeOKResponse(w, book)
 }
 
-/*
-Test with this curl command:
-curl -H "Content-Type: application/json" -d '{"name":"New Todo"}' http://localhost:8080/todos
-*/
-func TodoCreate(w http.ResponseWriter, r *http.Request) {
-	var todo Todo
+func BookIndex(w http.ResponseWriter, r *http.Request, _ httprouter.Params) {
+	books := []*Book{}
+	for _, book := range bookstore {
+		books = append(books, book)
+	}
+	writeOKResponse(w, books)
+}
+
+func BookShow(w http.ResponseWriter, r *http.Request, params httprouter.Params) {
+	isdn := params.ByName("isdn")
+	book, ok := bookstore[isdn]
+	if !ok {
+		// No book with the isdn in the url has been found
+		writeErrorResponse(w, http.StatusNotFound, "Record Not Found")
+		return
+	}
+	writeOKResponse(w, book)
+}
+
+func writeOKResponse(w http.ResponseWriter, m interface{}) {
+	w.Header().Set("Content-Type", "application/json; charset=UTF-8")
+	w.WriteHeader(http.StatusOK)
+	if err := json.NewEncoder(w).Encode(&JsonResponse{Data: m}); err != nil {
+		writeErrorResponse(w, http.StatusInternalServerError, "Internal Server Error")
+	}
+}
+
+func writeErrorResponse(w http.ResponseWriter, errorCode int, errorMsg string) {
+	w.Header().Set("Content-Type", "application/json; charset=UTF-8")
+	w.WriteHeader(errorCode)
+	json.
+		NewEncoder(w).
+		Encode(&JsonErrorResponse{Error: &ApiError{Status: errorCode, Title: errorMsg}})
+}
+
+func populateModelFromHandler(w http.ResponseWriter, r *http.Request, params httprouter.Params, model interface{}) error {
 	body, err := ioutil.ReadAll(io.LimitReader(r.Body, 1048576))
 	if err != nil {
-		panic(err)
+		return err
 	}
 	if err := r.Body.Close(); err != nil {
-		panic(err)
+		return err
 	}
-	if err := json.Unmarshal(body, &todo); err != nil {
-		w.Header().Set("Content-Type", "application/json; charset=UTF-8")
-		w.WriteHeader(422) // unprocessable entity
-		if err := json.NewEncoder(w).Encode(err); err != nil {
-			panic(err)
-		}
+	if err := json.Unmarshal(body, model); err != nil {
+		return err
 	}
-
-	t := RepoCreateTodo(todo)
-	w.Header().Set("Content-Type", "application/json; charset=UTF-8")
-	w.WriteHeader(http.StatusCreated)
-	if err := json.NewEncoder(w).Encode(t); err != nil {
-		panic(err)
-	}
+	return nil
 }

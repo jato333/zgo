@@ -4,24 +4,25 @@ import (
 	"net/http"
 	"time"
 
-	l4g "github.com/alecthomas/log4go"
+	log4go "github.com/alecthomas/log4go"
+	"github.com/julienschmidt/httprouter"
 )
 
-func Logger(inner http.Handler, name string) http.Handler {
-	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+func Logger(fn func(w http.ResponseWriter, r *http.Request, param httprouter.Params)) func(w http.ResponseWriter, r *http.Request, param httprouter.Params) {
+	return func(w http.ResponseWriter, r *http.Request, param httprouter.Params) {
 		start := time.Now()
-
-		inner.ServeHTTP(w, r)
-
-		l4g.Info(
-			"%s\t%s\t%s -> %s%s\t%s\t%s",
+		log4go.Info("%s\t%s	%s -> %s%s\t%s",
 			r.Proto,
 			r.Method,
 			r.RemoteAddr,
 			r.Host,
 			r.RequestURI,
-			name,
-			time.Since(start),
+			r.UserAgent(),
 		)
-	})
+
+		//		log4go.Info("%s", param)
+
+		fn(w, r, param)
+		log4go.Info("Done in %v (%s %s)", time.Since(start), r.Method, r.URL.Path)
+	}
 }

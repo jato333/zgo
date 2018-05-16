@@ -1,39 +1,24 @@
 package main
 
-import "net/http"
+import (
+	"github.com/julienschmidt/httprouter"
+)
 
 type Route struct {
 	Name        string
 	Method      string
-	Pattern     string
-	HandlerFunc http.HandlerFunc
+	Path        string
+	HandlerFunc httprouter.Handle
 }
 
 type Routes []Route
 
-var routes = Routes{
-	Route{
-		"Index",
-		"GET",
-		"/",
-		Index,
-	},
-	Route{
-		"TodoIndex",
-		"GET",
-		"/todos",
-		TodoIndex,
-	},
-	Route{
-		"TodoCreate",
-		"POST",
-		"/todos",
-		TodoCreate,
-	},
-	Route{
-		"TodoShow",
-		"GET",
-		"/todos/{todoId}",
-		TodoShow,
-	},
+func AllRoutes() Routes {
+	routes := Routes{
+		Route{"Index", "GET", "/", Index},
+		Route{"BookIndex", "GET", "/books", BookIndex},
+		Route{"Bookshow", "GET", "/books/:isdn", BookShow},
+		Route{"Bookshow", "POST", "/books", BookCreate},
+	}
+	return routes
 }
