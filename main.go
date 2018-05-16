@@ -18,7 +18,9 @@ func main() {
 
 	var banner string
 	if _, err := os.Stat("config/banner.txt"); err != nil {
-		banner = "There's no \"config/banner.txt\",You can set it as you like!"
+		if os.IsNotExist(err) {
+			banner = "There's no \"config/banner.txt\",You can set it as you like!"
+		}
 	} else {
 		b, err := ioutil.ReadFile("config/banner.txt")
 		if err != nil {
@@ -37,7 +39,9 @@ func main() {
 	)
 
 	if _, err := os.Stat("config/config.ini"); err != nil {
-		log4go.Info("use default config settings")
+		if os.IsNotExist(err) {
+			log4go.Info("use default config settings")
+		}
 	} else {
 		cfg, err := goconfig.LoadConfigFile("config/config.ini")
 		if err != nil {
