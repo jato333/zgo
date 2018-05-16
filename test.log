@@ -102,3 +102,341 @@ zzzzzzzzzzzzzzzzz    gggggggg::::::g    ooooooooooo
 [2018/05/16 17:30:29 CST] [INFO] (main.NewRouter:21) Loading [GET]	/books/:isdn
 [2018/05/16 17:30:29 CST] [INFO] (main.NewRouter:21) Loading [POST]	/books
 [2018/05/16 17:30:29 CST] [INFO] (main.NewRouter:24) 4 services were loaded successfully! Total cost 0s
+[2018/05/16 21:09:04 CST] [INFO] (main.main:46) Server Zgo 1.0.0.0 starting at [127.0.0.1:8080]
+zzzzzzzzzzzzzzzzz   ggggggggg   ggggg   ooooooooooo   
+z:::::::::::::::z  g:::::::::ggg::::g oo:::::::::::oo 
+z::::::::::::::z  g:::::::::::::::::go:::::::::::::::o
+zzzzzzzz::::::z  g::::::ggggg::::::ggo:::::ooooo:::::o
+      z::::::z   g:::::g     g:::::g o::::o     o::::o
+     z::::::z    g:::::g     g:::::g o::::o     o::::o
+    z::::::z     g:::::g     g:::::g o::::o     o::::o
+   z::::::z      g::::::g    g:::::g o::::o     o::::o
+  z::::::zzzzzzzzg:::::::ggggg:::::g o:::::ooooo:::::o
+ z::::::::::::::z g::::::::::::::::g o:::::::::::::::o
+z:::::::::::::::z  gg::::::::::::::g  oo:::::::::::oo 
+zzzzzzzzzzzzzzzzz    gggggggg::::::g    ooooooooooo   
+                             g:::::g                  
+                 gggggg      g:::::g                  
+                 g:::::gg   gg:::::g                  
+                  g::::::ggg:::::::g                  
+                   gg:::::::::::::g                   
+                     ggg::::::ggg                     
+                        gggggg                        
+[2018/05/16 21:09:04 CST] [INFO] (main.NewRouter:12) Begin Load service ...
+[2018/05/16 21:09:04 CST] [INFO] (main.NewRouter:21) Loading [GET]	/
+[2018/05/16 21:09:04 CST] [INFO] (main.NewRouter:21) Loading [GET]	/books
+[2018/05/16 21:09:04 CST] [INFO] (main.NewRouter:21) Loading [GET]	/books/:isdn
+[2018/05/16 21:09:04 CST] [INFO] (main.NewRouter:21) Loading [POST]	/books
+[2018/05/16 21:09:04 CST] [INFO] (main.NewRouter:24) 4 services were loaded successfully! Total cost 0s
+[2018/05/16 21:11:34 CST] [INFO] (main.main:46) Server Zgo 1.0.0.0 starting at [127.0.0.1:8080]
+zzzzzzzzzzzzzzzzz   ggggggggg   ggggg   ooooooooooo   
+z:::::::::::::::z  g:::::::::ggg::::g oo:::::::::::oo 
+z::::::::::::::z  g:::::::::::::::::go:::::::::::::::o
+zzzzzzzz::::::z  g::::::ggggg::::::ggo:::::ooooo:::::o
+      z::::::z   g:::::g     g:::::g o::::o     o::::o
+     z::::::z    g:::::g     g:::::g o::::o     o::::o
+    z::::::z     g:::::g     g:::::g o::::o     o::::o
+   z::::::z      g::::::g    g:::::g o::::o     o::::o
+  z::::::zzzzzzzzg:::::::ggggg:::::g o:::::ooooo:::::o
+ z::::::::::::::z g::::::::::::::::g o:::::::::::::::o
+z:::::::::::::::z  gg::::::::::::::g  oo:::::::::::oo 
+zzzzzzzzzzzzzzzzz    gggggggg::::::g    ooooooooooo   
+                             g:::::g                  
+                 gggggg      g:::::g                  
+                 g:::::gg   gg:::::g                  
+                  g::::::ggg:::::::g                  
+                   gg:::::::::::::g                   
+                     ggg::::::ggg                     
+                        gggggg                        
+[2018/05/16 21:11:34 CST] [INFO] (main.NewRouter:12) Begin Load service ...
+[2018/05/16 21:11:34 CST] [INFO] (main.NewRouter:21) Loading [GET]	/
+[2018/05/16 21:11:34 CST] [INFO] (main.NewRouter:21) Loading [GET]	/books
+[2018/05/16 21:11:34 CST] [INFO] (main.NewRouter:21) Loading [GET]	/books/:isdn
+[2018/05/16 21:11:34 CST] [INFO] (main.NewRouter:21) Loading [POST]	/books
+[2018/05/16 21:11:34 CST] [INFO] (main.NewRouter:24) 4 services were loaded successfully! Total cost 12.0007ms
+[2018/05/16 21:13:33 CST] [INFO] (main.main:46) Server Zgo 1.0.0.0 starting at [127.0.0.1:8080]
+zzzzzzzzzzzzzzzzz   ggggggggg   ggggg   ooooooooooo   
+z:::::::::::::::z  g:::::::::ggg::::g oo:::::::::::oo 
+z::::::::::::::z  g:::::::::::::::::go:::::::::::::::o
+zzzzzzzz::::::z  g::::::ggggg::::::ggo:::::ooooo:::::o
+      z::::::z   g:::::g     g:::::g o::::o     o::::o
+     z::::::z    g:::::g     g:::::g o::::o     o::::o
+    z::::::z     g:::::g     g:::::g o::::o     o::::o
+   z::::::z      g::::::g    g:::::g o::::o     o::::o
+  z::::::zzzzzzzzg:::::::ggggg:::::g o:::::ooooo:::::o
+ z::::::::::::::z g::::::::::::::::g o:::::::::::::::o
+z:::::::::::::::z  gg::::::::::::::g  oo:::::::::::oo 
+zzzzzzzzzzzzzzzzz    gggggggg::::::g    ooooooooooo   
+                             g:::::g                  
+                 gggggg      g:::::g                  
+                 g:::::gg   gg:::::g                  
+                  g::::::ggg:::::::g                  
+                   gg:::::::::::::g                   
+                     ggg::::::ggg                     
+                        gggggg                        
+[2018/05/16 21:13:33 CST] [INFO] (main.NewRouter:12) Begin Load service ...
+[2018/05/16 21:13:33 CST] [INFO] (main.NewRouter:21) Loading [GET]	/
+[2018/05/16 21:13:33 CST] [INFO] (main.NewRouter:21) Loading [GET]	/books
+[2018/05/16 21:13:33 CST] [INFO] (main.NewRouter:21) Loading [GET]	/books/:isdn
+[2018/05/16 21:13:33 CST] [INFO] (main.NewRouter:21) Loading [POST]	/books
+[2018/05/16 21:13:33 CST] [INFO] (main.NewRouter:24) 4 services were loaded successfully! Total cost 0s
+[2018/05/16 21:14:45 CST] [INFO] (main.main:46) Server Zgo 1.0.0.0 starting at [127.0.0.1:8080]
+zzzzzzzzzzzzzzzzz   ggggggggg   ggggg   ooooooooooo   
+z:::::::::::::::z  g:::::::::ggg::::g oo:::::::::::oo 
+z::::::::::::::z  g:::::::::::::::::go:::::::::::::::o
+zzzzzzzz::::::z  g::::::ggggg::::::ggo:::::ooooo:::::o
+      z::::::z   g:::::g     g:::::g o::::o     o::::o
+     z::::::z    g:::::g     g:::::g o::::o     o::::o
+    z::::::z     g:::::g     g:::::g o::::o     o::::o
+   z::::::z      g::::::g    g:::::g o::::o     o::::o
+  z::::::zzzzzzzzg:::::::ggggg:::::g o:::::ooooo:::::o
+ z::::::::::::::z g::::::::::::::::g o:::::::::::::::o
+z:::::::::::::::z  gg::::::::::::::g  oo:::::::::::oo 
+zzzzzzzzzzzzzzzzz    gggggggg::::::g    ooooooooooo   
+                             g:::::g                  
+                 gggggg      g:::::g                  
+                 g:::::gg   gg:::::g                  
+                  g::::::ggg:::::::g                  
+                   gg:::::::::::::g                   
+                     ggg::::::ggg                     
+                        gggggg                        
+[2018/05/16 21:14:45 CST] [INFO] (main.NewRouter:12) Begin Load service ...
+[2018/05/16 21:14:45 CST] [INFO] (main.NewRouter:21) Loading [GET]	/
+[2018/05/16 21:14:45 CST] [INFO] (main.NewRouter:21) Loading [GET]	/books
+[2018/05/16 21:14:45 CST] [INFO] (main.NewRouter:21) Loading [GET]	/books/:isdn
+[2018/05/16 21:14:45 CST] [INFO] (main.NewRouter:21) Loading [POST]	/books
+[2018/05/16 21:14:45 CST] [INFO] (main.NewRouter:24) 4 services were loaded successfully! Total cost 0s
+[2018/05/16 21:21:59 CST] [INFO] (main.main:49) Server Zgo 1.0.0 starting at [127.0.0.1:8080]
+zzzzzzzzzzzzzzzzz   ggggggggg   ggggg   ooooooooooo   
+z:::::::::::::::z  g:::::::::ggg::::g oo:::::::::::oo 
+z::::::::::::::z  g:::::::::::::::::go:::::::::::::::o
+zzzzzzzz::::::z  g::::::ggggg::::::ggo:::::ooooo:::::o
+      z::::::z   g:::::g     g:::::g o::::o     o::::o
+     z::::::z    g:::::g     g:::::g o::::o     o::::o
+    z::::::z     g:::::g     g:::::g o::::o     o::::o
+   z::::::z      g::::::g    g:::::g o::::o     o::::o
+  z::::::zzzzzzzzg:::::::ggggg:::::g o:::::ooooo:::::o
+ z::::::::::::::z g::::::::::::::::g o:::::::::::::::o
+z:::::::::::::::z  gg::::::::::::::g  oo:::::::::::oo 
+zzzzzzzzzzzzzzzzz    gggggggg::::::g    ooooooooooo   
+                             g:::::g                  
+                 gggggg      g:::::g                  
+                 g:::::gg   gg:::::g                  
+                  g::::::ggg:::::::g                  
+                   gg:::::::::::::g                   
+                     ggg::::::ggg                     
+                        gggggg                        
+[2018/05/16 21:21:59 CST] [INFO] (main.NewRouter:12) Begin Load service ...
+[2018/05/16 21:21:59 CST] [INFO] (main.NewRouter:21) Loading [GET]	/
+[2018/05/16 21:21:59 CST] [INFO] (main.NewRouter:21) Loading [GET]	/books
+[2018/05/16 21:21:59 CST] [INFO] (main.NewRouter:21) Loading [GET]	/books/:isdn
+[2018/05/16 21:21:59 CST] [INFO] (main.NewRouter:21) Loading [POST]	/books
+[2018/05/16 21:21:59 CST] [INFO] (main.NewRouter:24) 4 services were loaded successfully! Total cost 0s
+[2018/05/16 21:23:12 CST] [INFO] (main.main:49) Server Zgo 1.0.0 starting at [127.0.0.1:8080]
+zzzzzzzzzzzzzzzzz   ggggggggg   ggggg   ooooooooooo   
+z:::::::::::::::z  g:::::::::ggg::::g oo:::::::::::oo 
+z::::::::::::::z  g:::::::::::::::::go:::::::::::::::o
+zzzzzzzz::::::z  g::::::ggggg::::::ggo:::::ooooo:::::o
+      z::::::z   g:::::g     g:::::g o::::o     o::::o
+     z::::::z    g:::::g     g:::::g o::::o     o::::o
+    z::::::z     g:::::g     g:::::g o::::o     o::::o
+   z::::::z      g::::::g    g:::::g o::::o     o::::o
+  z::::::zzzzzzzzg:::::::ggggg:::::g o:::::ooooo:::::o
+ z::::::::::::::z g::::::::::::::::g o:::::::::::::::o
+z:::::::::::::::z  gg::::::::::::::g  oo:::::::::::oo 
+zzzzzzzzzzzzzzzzz    gggggggg::::::g    ooooooooooo   
+                             g:::::g                  
+                 gggggg      g:::::g                  
+                 g:::::gg   gg:::::g                  
+                  g::::::ggg:::::::g                  
+                   gg:::::::::::::g                   
+                     ggg::::::ggg                     
+                        gggggg                        
+[2018/05/16 21:23:12 CST] [INFO] (main.NewRouter:12) Begin Load service ...
+[2018/05/16 21:23:12 CST] [INFO] (main.NewRouter:21) Loading [GET]	/
+[2018/05/16 21:23:12 CST] [INFO] (main.NewRouter:21) Loading [GET]	/books
+[2018/05/16 21:23:12 CST] [INFO] (main.NewRouter:21) Loading [GET]	/books/:isdn
+[2018/05/16 21:23:12 CST] [INFO] (main.NewRouter:21) Loading [POST]	/books
+[2018/05/16 21:23:12 CST] [INFO] (main.NewRouter:24) 4 services were loaded successfully! Total cost 0s
+[2018/05/16 21:24:27 CST] [INFO] (main.main:49) Server Zgo 1.0.0 starting at [127.0.0.1:8080]
+zzzzzzzzzzzzzzzzz   ggggggggg   ggggg   ooooooooooo   
+z:::::::::::::::z  g:::::::::ggg::::g oo:::::::::::oo 
+z::::::::::::::z  g:::::::::::::::::go:::::::::::::::o
+zzzzzzzz::::::z  g::::::ggggg::::::ggo:::::ooooo:::::o
+      z::::::z   g:::::g     g:::::g o::::o     o::::o
+     z::::::z    g:::::g     g:::::g o::::o     o::::o
+    z::::::z     g:::::g     g:::::g o::::o     o::::o
+   z::::::z      g::::::g    g:::::g o::::o     o::::o
+  z::::::zzzzzzzzg:::::::ggggg:::::g o:::::ooooo:::::o
+ z::::::::::::::z g::::::::::::::::g o:::::::::::::::o
+z:::::::::::::::z  gg::::::::::::::g  oo:::::::::::oo 
+zzzzzzzzzzzzzzzzz    gggggggg::::::g    ooooooooooo   
+                             g:::::g                  
+                 gggggg      g:::::g                  
+                 g:::::gg   gg:::::g                  
+                  g::::::ggg:::::::g                  
+                   gg:::::::::::::g                   
+                     ggg::::::ggg                     
+                        gggggg                        
+[2018/05/16 21:24:27 CST] [INFO] (main.NewRouter:12) Begin Load service ...
+[2018/05/16 21:24:27 CST] [INFO] (main.NewRouter:21) Loading [GET]	/
+[2018/05/16 21:24:27 CST] [INFO] (main.NewRouter:21) Loading [GET]	/books
+[2018/05/16 21:24:27 CST] [INFO] (main.NewRouter:21) Loading [GET]	/books/:isdn
+[2018/05/16 21:24:27 CST] [INFO] (main.NewRouter:21) Loading [POST]	/books
+[2018/05/16 21:24:27 CST] [INFO] (main.NewRouter:24) 4 services were loaded successfully! Total cost 0s
+[2018/05/16 21:24:44 CST] [INFO] (main.main:49) Server Zgo 1.0.0 starting at [127.0.0.1:8080]
+zzzzzzzzzzzzzzzzz   ggggggggg   ggggg   ooooooooooo   
+z:::::::::::::::z  g:::::::::ggg::::g oo:::::::::::oo 
+z::::::::::::::z  g:::::::::::::::::go:::::::::::::::o
+zzzzzzzz::::::z  g::::::ggggg::::::ggo:::::ooooo:::::o
+      z::::::z   g:::::g     g:::::g o::::o     o::::o
+     z::::::z    g:::::g     g:::::g o::::o     o::::o
+    z::::::z     g:::::g     g:::::g o::::o     o::::o
+   z::::::z      g::::::g    g:::::g o::::o     o::::o
+  z::::::zzzzzzzzg:::::::ggggg:::::g o:::::ooooo:::::o
+ z::::::::::::::z g::::::::::::::::g o:::::::::::::::o
+z:::::::::::::::z  gg::::::::::::::g  oo:::::::::::oo 
+zzzzzzzzzzzzzzzzz    gggggggg::::::g    ooooooooooo   
+                             g:::::g                  
+                 gggggg      g:::::g                  
+                 g:::::gg   gg:::::g                  
+                  g::::::ggg:::::::g                  
+                   gg:::::::::::::g                   
+                     ggg::::::ggg                     
+                        gggggg                        
+[2018/05/16 21:24:44 CST] [INFO] (main.NewRouter:12) Begin Load service ...
+[2018/05/16 21:24:44 CST] [INFO] (main.NewRouter:21) Loading [GET]	/
+[2018/05/16 21:24:44 CST] [INFO] (main.NewRouter:21) Loading [GET]	/books
+[2018/05/16 21:24:44 CST] [INFO] (main.NewRouter:21) Loading [GET]	/books/:isdn
+[2018/05/16 21:24:44 CST] [INFO] (main.NewRouter:21) Loading [POST]	/books
+[2018/05/16 21:24:44 CST] [INFO] (main.NewRouter:24) 4 services were loaded successfully! Total cost 0s
+[2018/05/16 21:25:24 CST] [INFO] (main.main:49) Server Zgo 1.0.0 starting at [127.0.0.1:8080]
+zzzzzzzzzzzzzzzzz   ggggggggg   ggggg   ooooooooooo   
+z:::::::::::::::z  g:::::::::ggg::::g oo:::::::::::oo 
+z::::::::::::::z  g:::::::::::::::::go:::::::::::::::o
+zzzzzzzz::::::z  g::::::ggggg::::::ggo:::::ooooo:::::o
+      z::::::z   g:::::g     g:::::g o::::o     o::::o
+     z::::::z    g:::::g     g:::::g o::::o     o::::o
+    z::::::z     g:::::g     g:::::g o::::o     o::::o
+   z::::::z      g::::::g    g:::::g o::::o     o::::o
+  z::::::zzzzzzzzg:::::::ggggg:::::g o:::::ooooo:::::o
+ z::::::::::::::z g::::::::::::::::g o:::::::::::::::o
+z:::::::::::::::z  gg::::::::::::::g  oo:::::::::::oo 
+zzzzzzzzzzzzzzzzz    gggggggg::::::g    ooooooooooo   
+                             g:::::g                  
+                 gggggg      g:::::g                  
+                 g:::::gg   gg:::::g                  
+                  g::::::ggg:::::::g                  
+                   gg:::::::::::::g                   
+                     ggg::::::ggg                     
+                        gggggg                        
+[2018/05/16 21:25:24 CST] [INFO] (main.NewRouter:12) Begin Load service ...
+[2018/05/16 21:25:24 CST] [INFO] (main.NewRouter:21) Loading [GET]	/
+[2018/05/16 21:25:24 CST] [INFO] (main.NewRouter:21) Loading [GET]	/books
+[2018/05/16 21:25:24 CST] [INFO] (main.NewRouter:21) Loading [GET]	/books/:isdn
+[2018/05/16 21:25:24 CST] [INFO] (main.NewRouter:21) Loading [POST]	/books
+[2018/05/16 21:25:24 CST] [INFO] (main.NewRouter:24) 4 services were loaded successfully! Total cost 0s
+[2018/05/16 21:26:14 CST] [INFO] (main.main:48) Server Zgo 1.0.0 starting at [127.0.0.1:8080]
+zzzzzzzzzzzzzzzzz   ggggggggg   ggggg   ooooooooooo   
+z:::::::::::::::z  g:::::::::ggg::::g oo:::::::::::oo 
+z::::::::::::::z  g:::::::::::::::::go:::::::::::::::o
+zzzzzzzz::::::z  g::::::ggggg::::::ggo:::::ooooo:::::o
+      z::::::z   g:::::g     g:::::g o::::o     o::::o
+     z::::::z    g:::::g     g:::::g o::::o     o::::o
+    z::::::z     g:::::g     g:::::g o::::o     o::::o
+   z::::::z      g::::::g    g:::::g o::::o     o::::o
+  z::::::zzzzzzzzg:::::::ggggg:::::g o:::::ooooo:::::o
+ z::::::::::::::z g::::::::::::::::g o:::::::::::::::o
+z:::::::::::::::z  gg::::::::::::::g  oo:::::::::::oo 
+zzzzzzzzzzzzzzzzz    gggggggg::::::g    ooooooooooo   
+                             g:::::g                  
+                 gggggg      g:::::g                  
+                 g:::::gg   gg:::::g                  
+                  g::::::ggg:::::::g                  
+                   gg:::::::::::::g                   
+                     ggg::::::ggg                     
+                        gggggg                        
+[2018/05/16 21:26:14 CST] [INFO] (main.NewRouter:12) Begin Load service ...
+[2018/05/16 21:26:14 CST] [INFO] (main.NewRouter:21) Loading [GET]	/
+[2018/05/16 21:26:14 CST] [INFO] (main.NewRouter:21) Loading [GET]	/books
+[2018/05/16 21:26:14 CST] [INFO] (main.NewRouter:21) Loading [GET]	/books/:isdn
+[2018/05/16 21:26:14 CST] [INFO] (main.NewRouter:21) Loading [POST]	/books
+[2018/05/16 21:26:14 CST] [INFO] (main.NewRouter:24) 4 services were loaded successfully! Total cost 0s
+[2018/05/16 21:26:55 CST] [INFO] (main.main:48) Server Zgo 1.0.0 starting at [127.0.0.1:8080]
+zzzzzzzzzzzzzzzzz   ggggggggg   ggggg   ooooooooooo   
+z:::::::::::::::z  g:::::::::ggg::::g oo:::::::::::oo 
+z::::::::::::::z  g:::::::::::::::::go:::::::::::::::o
+zzzzzzzz::::::z  g::::::ggggg::::::ggo:::::ooooo:::::o
+      z::::::z   g:::::g     g:::::g o::::o     o::::o
+     z::::::z    g:::::g     g:::::g o::::o     o::::o
+    z::::::z     g:::::g     g:::::g o::::o     o::::o
+   z::::::z      g::::::g    g:::::g o::::o     o::::o
+  z::::::zzzzzzzzg:::::::ggggg:::::g o:::::ooooo:::::o
+ z::::::::::::::z g::::::::::::::::g o:::::::::::::::o
+z:::::::::::::::z  gg::::::::::::::g  oo:::::::::::oo 
+zzzzzzzzzzzzzzzzz    gggggggg::::::g    ooooooooooo   
+                             g:::::g                  
+                 gggggg      g:::::g                  
+                 g:::::gg   gg:::::g                  
+                  g::::::ggg:::::::g                  
+                   gg:::::::::::::g                   
+                     ggg::::::ggg                     
+                        gggggg                        
+[2018/05/16 21:26:55 CST] [INFO] (main.NewRouter:12) Begin Load service ...
+[2018/05/16 21:26:55 CST] [INFO] (main.NewRouter:21) Loading [GET]	/
+[2018/05/16 21:26:55 CST] [INFO] (main.NewRouter:21) Loading [GET]	/books
+[2018/05/16 21:26:55 CST] [INFO] (main.NewRouter:21) Loading [GET]	/books/:isdn
+[2018/05/16 21:26:55 CST] [INFO] (main.NewRouter:21) Loading [POST]	/books
+[2018/05/16 21:26:55 CST] [INFO] (main.NewRouter:24) 4 services were loaded successfully! Total cost 0s
+[2018/05/16 21:27:28 CST] [INFO] (main.main:48) Server Zgo 1.0.0 starting at [127.0.0.3:8000]
+zzzzzzzzzzzzzzzzz   ggggggggg   ggggg   ooooooooooo   
+z:::::::::::::::z  g:::::::::ggg::::g oo:::::::::::oo 
+z::::::::::::::z  g:::::::::::::::::go:::::::::::::::o
+zzzzzzzz::::::z  g::::::ggggg::::::ggo:::::ooooo:::::o
+      z::::::z   g:::::g     g:::::g o::::o     o::::o
+     z::::::z    g:::::g     g:::::g o::::o     o::::o
+    z::::::z     g:::::g     g:::::g o::::o     o::::o
+   z::::::z      g::::::g    g:::::g o::::o     o::::o
+  z::::::zzzzzzzzg:::::::ggggg:::::g o:::::ooooo:::::o
+ z::::::::::::::z g::::::::::::::::g o:::::::::::::::o
+z:::::::::::::::z  gg::::::::::::::g  oo:::::::::::oo 
+zzzzzzzzzzzzzzzzz    gggggggg::::::g    ooooooooooo   
+                             g:::::g                  
+                 gggggg      g:::::g                  
+                 g:::::gg   gg:::::g                  
+                  g::::::ggg:::::::g                  
+                   gg:::::::::::::g                   
+                     ggg::::::ggg                     
+                        gggggg                        
+[2018/05/16 21:27:28 CST] [INFO] (main.NewRouter:12) Begin Load service ...
+[2018/05/16 21:27:28 CST] [INFO] (main.NewRouter:21) Loading [GET]	/
+[2018/05/16 21:27:28 CST] [INFO] (main.NewRouter:21) Loading [GET]	/books
+[2018/05/16 21:27:28 CST] [INFO] (main.NewRouter:21) Loading [GET]	/books/:isdn
+[2018/05/16 21:27:28 CST] [INFO] (main.NewRouter:21) Loading [POST]	/books
+[2018/05/16 21:27:28 CST] [INFO] (main.NewRouter:24) 4 services were loaded successfully! Total cost 0s
+[2018/05/16 21:28:28 CST] [INFO] (main.main:48) Server Zgo 1.0.0 starting at [127.0.0.1:8000]
+zzzzzzzzzzzzzzzzz   ggggggggg   ggggg   ooooooooooo   
+z:::::::::::::::z  g:::::::::ggg::::g oo:::::::::::oo 
+z::::::::::::::z  g:::::::::::::::::go:::::::::::::::o
+zzzzzzzz::::::z  g::::::ggggg::::::ggo:::::ooooo:::::o
+      z::::::z   g:::::g     g:::::g o::::o     o::::o
+     z::::::z    g:::::g     g:::::g o::::o     o::::o
+    z::::::z     g:::::g     g:::::g o::::o     o::::o
+   z::::::z      g::::::g    g:::::g o::::o     o::::o
+  z::::::zzzzzzzzg:::::::ggggg:::::g o:::::ooooo:::::o
+ z::::::::::::::z g::::::::::::::::g o:::::::::::::::o
+z:::::::::::::::z  gg::::::::::::::g  oo:::::::::::oo 
+zzzzzzzzzzzzzzzzz    gggggggg::::::g    ooooooooooo   
+                             g:::::g                  
+                 gggggg      g:::::g                  
+                 g:::::gg   gg:::::g                  
+                  g::::::ggg:::::::g                  
+                   gg:::::::::::::g                   
+                     ggg::::::ggg                     
+                        gggggg                        
+[2018/05/16 21:28:28 CST] [INFO] (main.NewRouter:12) Begin Load service ...
+[2018/05/16 21:28:28 CST] [INFO] (main.NewRouter:21) Loading [GET]	/
+[2018/05/16 21:28:28 CST] [INFO] (main.NewRouter:21) Loading [GET]	/books
+[2018/05/16 21:28:28 CST] [INFO] (main.NewRouter:21) Loading [GET]	/books/:isdn
+[2018/05/16 21:28:28 CST] [INFO] (main.NewRouter:21) Loading [POST]	/books
+[2018/05/16 21:28:28 CST] [INFO] (main.NewRouter:24) 4 services were loaded successfully! Total cost 0s
